@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nested Element Creation Example</title>
+  
+</head>
+<body>
+   <header>
+     <h2>
+   Student Blog
+     </h2>
+     <head> home </head>
+  </header>
+  
+  
+  <h2>Add a New Blog Post</h2>
+  <div> Title: 
+    <input type="text" id="title" placeholder="title"> </div><br>
+    <div> Content: 
+      <textarea type="text" id="main" placeholder="Enter some text"></textarea><br>
+      <div> Author Name
+        <input type="text" id="uname" placeholder="Author Name"><br>
+       
+    <button id="createBtn">Add Post</button>
+    
+    <script>
+      
+   document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('createBtn');
+
+            btn.addEventListener('click', function() {
+              
+              const currentDate = new Date().toDateString();
+             
+                // Create a new div element
+                const newDiv = document.createElement('div');
+
+                // Create an h2 element
+                const newH2 = document.createElement('h2');
+                newH2.textContent = document.getElementById('title').value;
+const uname = document.getElementById('uname').value;
+              const main = document.getElementById('main').value;
+
+                // Create a p element
+                const newP = document.createElement('p');
+                newP.textContent = "Posted " + currentDate + " by " + uname;
+const newP2 = document.createElement('p');
+              newP2.textContent = main
+
+                // Append the h2 and p elements to the div
+                newDiv.appendChild(newH2);
+                newDiv.appendChild(newP);
+                newDiv.appendChild(newP2)
+
+                // Append the new div to the body
+                document.body.appendChild(newDiv);
+            });
+        });
+    </script>
+        
+        <footer>© 2024 Student Blog. All Rights Reserved</footer>
+</body>
+      
+</html>
+  
