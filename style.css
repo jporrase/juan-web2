@@ -14,28 +14,26 @@ body {
 }
 
 h2 {
-  margin-top: 5;
+  margin-top: 5px;
   text-align: center;
-  margin-bottom: 5;
+  margin-bottom: 5px;
   font-weight: bold;
- color: Purple;
-
+  color: purple;
 }
 
-p, h1{
-  margin-bottom: 0;
+p, h1 {
+  margin-bottom: 0px;
   text-align: center;
   color: pink;
-
 }
 
 .chart-description {
   margin-top: 10px;
 }
 
-iframe{
+iframe {
   width: 100%;
- color: pink;
+  color: pink;
   height: 500px; /* Adjust the height as needed */
   border: none; /* Remove border */
 }
