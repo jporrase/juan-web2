@@ -18,13 +18,13 @@ h2 {
   text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
-  color: purple;
+  color: black;
 }
 
 p, h1 {
   margin-bottom: 0px;
   text-align: center;
-  color: pink;
+  color: black;
 }
 
 .chart-description {
@@ -33,7 +33,7 @@ p, h1 {
 
 iframe {
   width: 100%;
-  color: pink;
+  color: black;
   height: 500px; /* Adjust the height as needed */
   border: none; /* Remove border */
 }
